@@ -252,8 +252,11 @@ footer{
 	width: 30px;
 	height: 30px;
 	text-align: center;
-	padding-top: 5px;
+	line-height:30px;
 	border-radius: 100%;
 	background: #E29A36;
 	display: inline-block;
+}
+.social-icon a:hover{
+	background:gray;
 }
