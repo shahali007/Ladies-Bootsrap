@@ -5,12 +5,10 @@
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-
 body{
 	font-family:calibri;
-	color:#2A2B26;
+	color:#868684;
 }
-
 @font-face {
     font-family: revere_normal;
     src: url(../fonts/revere.ttf);
@@ -19,10 +17,6 @@ body{
     font-family: revere_normal;
     src: url(../fonts/revere.eot);
 }
-
-h1,h2,h3,h4,h5,h6,p{
-	color:#868684;
-}
 a{
 	text-decoration:none;
 	color:#000;
@@ -30,23 +24,22 @@ a{
 a:hover,a:focus{
 	text-decoration:none;
 }
-
-.row{
-	
-}
-
 span{
 	color:#E29A36;
 }
 
 /*header css*/
-header a{
+header a,
+.menu_area form,
+.slider-control{
 	background:url(../images/blog-image.png);
+}
+header a{
 	width:200px;
 	display:block;
 	margin:0 auto;
+	color:#868684;
 }
-
 header h1{
 	font-family:revere_normal;
 	font-weight:900;
@@ -63,14 +56,13 @@ header h5{
 	position:relative;
 	padding:15px 0;
 }
-.menu_area img.top-shadow{
+.top-shadow{
 	position:absolute;
 	top:10px;
 	width:105%;
-	left:-5%;
-	
+	left:-5%;	
 }
-.menu_area img.bottom-shadow{
+.bottom-shadow{
 	position:absolute;
 	bottom:20px;
 	width:105%;
@@ -82,15 +74,12 @@ header h5{
 	background: transparent;
 }
 .menu_area form{
-	background:url(../images/blog-image.png);
 	margin: -1px;
 }
-
 .menu_area form .btn{
 	background:transparent;
 	color: #000;
 }
-nav{}
 nav ul{
 	list-style:none;
 }
@@ -117,7 +106,7 @@ nav ul li a:hover{
 
 .silder-caption{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     padding: 15px 15px 30px 15px;
     background: rgba(255,255,255,0.5);
     color: #fff;
@@ -128,9 +117,9 @@ nav ul li a:hover{
 .silder_area .slider-arrow i{
 	position: absolute;
 	top: 50%;
-	height: 25px;
 	width: 20px;
 	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-top: -15px;
 	background: #fff;
 	cursor: pointer;
@@ -153,7 +142,7 @@ nav ul li a:hover{
 	text-align: center;
 	box-shadow: 0 -4px 5px 0 grey;
 	border-radius: 5px 5px 0 0;
-	background:#fff url(../images/blog-image.png);
+	background:#fff;
 }
 
 .slider-control  a {
@@ -168,8 +157,8 @@ nav ul li a:hover{
 .slider-control  a:hover {
 	background:#E29A36;
 }
+
 /* intro_area css*/
-.intro_area {}
 .intro_area p {
     padding: 25px 35px;
     border: 1px solid gray;
@@ -179,7 +168,6 @@ nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 0 0 5px 0 gray;
 }
-
 .recent-work_area .item {
 	width:100%;
 	float:left;
@@ -202,13 +190,8 @@ nav ul li a:hover{
 	-o-transition:all 0.5s;
 }
 .recent-work_area .item:hover::before{
-	background:rgba(0,0,0,0.8);
-	
+	background:rgba(0,0,0,0.8);	
 }
-.recent-work_area .item > img {
-	
-}
-
 .recent-work_area .item i {
 	height: 20px;
 	left: 50%;
@@ -225,11 +208,11 @@ nav ul li a:hover{
 	-o-transition:all 0.5s;
 	cursor: pointer;
 }
-
 .recent-work_area .item:hover i {
 	opacity:1;
 	color: #fff;
 }
+
 /* recent-post css */
 .recent-post .row{
 	margin-bottom: 15px;
@@ -250,7 +233,6 @@ nav ul li a:hover{
 footer{
 	padding: 15px 0 0 0;
 }
-
 .notification a{
 	display: inline-block;
 	width: 45%;
